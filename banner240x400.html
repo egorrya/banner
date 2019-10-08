@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>HTML5</title>
+  <!--[if IE]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style>
+@font-face {
+	font-family: 'Futura';
+	src: url('FuturaMediumC.eot');
+	src: local('Futura Medium Cyrillic'), local('FuturaMediumC'),
+		url('fonts/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+		url('fonts/FuturaMediumC.woff') format('woff'),
+		url('fonts/FuturaMediumC.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+.banner {
+   font-family: 'Futura', sans-serif;
+   position:relative;
+   width:240px;
+   height:400px;
+   background:linear-gradient(-45deg,#a1cbee,#e0eef8,#f6e4e6,#ddb8cb);
+   animation:gradientBG 6s ease infinite;
+   background-size:400% 400%;
+}
+   @-webkit-keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+.banner p {
+	padding: 10px 10px 25px;
+	margin: 0;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.lg {
+	display:block; 
+	margin:10px auto 0;
+}
+
+.wb {
+	width:35px;
+	position:absolute;
+	top:6px;
+	right:8px;
+}
+
+.rbw {
+	margin: 0 auto;
+	text-decoration:none;
+    color:#333;
+	width:calc(10vw + 8px);
+	height:calc(3vw + 8px);
+	background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+	border-radius:50px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:16px;
+	font-weight:bold;
+}
+.rbw:after {
+	content:attr(alt);
+	width:10vw;
+	height:3vw;
+	border-radius:50px;
+	background-color:#fff;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.rbw:hover {
+	animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+	background-position:20vw;
+  }
+}
+@-webkit-keyframes slidebg {
+  to {
+	background-position:20vw;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 30px;
+}
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-general {
+  width: 1200px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.07)
+}
+.container-general .gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+}
+.container-general .gallery-wrap .item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: all ease-out .3s
+}
+
+.container-general .gallery-wrap .item:hover {
+  flex: 7;
+}
+
+.wrap-effect-1 .item:first-of-type {
+  background-image: url('1.jpg');
+}
+.wrap-effect-1 .item:nth-of-type(2) {
+  background-image: url('4.jpg');
+}
+.wrap-effect-1 .item:nth-of-type(3) {
+  background-image: url('2.jpg');
+}
+  </style>
+  
+ </head>
+ <body>
+ 
+  <div class="banner">
+  
+	<a href="#"><img src="img/lg.png" class="lg"></img></a>
+	<a href="#"><img src="img/wb.png" class="wb"></img></a>
+	
+	<p>Одежда больших размеров  Скидки до 50%</p>
+	
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide">
+			<div class="container-general">
+			  <div class="gallery-wrap wrap-effect-1">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+  
+	<a href="#" class="rbw" alt="Подробнее"></a>
+	
+  </div>
+  
+ </body>
+</html>
