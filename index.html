@@ -30,7 +30,7 @@
    @-webkit-keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 
 .banner p {
-	padding: 10px 10px 25px;
+	padding: 10px 10px 20px;
 	margin: 0;
 	text-align: center;
 	font-size: 18px;
@@ -50,7 +50,7 @@
 }
 
 .rbw {
-	margin: 0 auto;
+	margin: 20px auto 0;
 	text-decoration:none;
     color:#333;
 	width:calc(10vw + 8px);
@@ -88,47 +88,82 @@
   }
 }
 
-.swiper-container {
+.slider {
+  max-width: 120px;
+  height: 180px;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5,
+.glide1,.glide2,.glide3,.glide4,.glide5 {
+  position: absolute;
   width: 100%;
-  height: 150px;
-  margin-bottom: 30px;
-}
-.swiper-slide {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container-general {
-  width: 1200px;
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.07)
-}
-.container-general .gallery-wrap {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 150px;
-}
-.container-general .gallery-wrap .item {
-  flex: 1;
   height: 100%;
-  background-position: center;
-  background-size: cover;
-  transition: all ease-out .3s
+  background-size: cover!important;
+}
+.slide1 {
+  background: url("2.jpg")no-repeat center;   
+    animation:fade 10s infinite;
+-webkit-animation:fade 10s infinite;
+
+} 
+.slide2 {
+  background: url("3.jpg")no-repeat center;
+    animation:fade2 10s infinite;
+-webkit-animation:fade2 10s infinite;
+}
+.slide3 {
+  background: url("1.jpg")no-repeat center;
+  animation:fade3 10s infinite;
+-webkit-animation:fade3 10s infinite;
 }
 
-.container-general .gallery-wrap .item:hover {
-  flex: 7;
+.glider {
+  max-width: 120px;
+  height: 180px;
+  position: relative;
+  margin-left: 120px;
+  margin-top: -180px;
 }
 
-.wrap-effect-1 .item:first-of-type {
-  background-image: url('1.jpg');
+.glide1 {
+  background: url("4.jpg")no-repeat center;
+
+    animation:fade 10s infinite;
+-webkit-animation:fade 10s infinite;
+
+} 
+.glide2 {
+  background: url("1.jpg")no-repeat center;
+
+    animation:fade2 10s infinite;
+-webkit-animation:fade2 10s infinite;
 }
-.wrap-effect-1 .item:nth-of-type(2) {
-  background-image: url('4.jpg');
+.glide3 {
+    background: url("2.jpg")no-repeat center;
+
+    animation:fade3 10s infinite;
+-webkit-animation:fade3 10s infinite;
 }
-.wrap-effect-1 .item:nth-of-type(3) {
-  background-image: url('2.jpg');
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
 }
   </style>
   
@@ -140,20 +175,18 @@
 	<a href="#"><img src="img/lg.png" class="lg"></img></a>
 	<a href="#"><img src="img/wb.png" class="wb"></img></a>
 	
-	<p>Одежда больших размеров  Скидки до 50%</p>
+	<p>Большая одежда </br> Большие скидки</p>
 	
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-		  <div class="swiper-slide">
-			<div class="container-general">
-			  <div class="gallery-wrap wrap-effect-1">
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-			  </div>
-			</div>
-		  </div>
-		</div>
+	<div class='slider'>
+	  <div class='slide1'></div>
+	  <div class='slide2'></div>
+	  <div class='slide3'></div>
+	</div>
+	
+	<div class='glider'>
+	  <div class='glide1'></div>
+	  <div class='glide2'></div>
+	  <div class='glide3'></div>
 	</div>
   
 	<a href="#" class="rbw" alt="Подробнее"></a>
