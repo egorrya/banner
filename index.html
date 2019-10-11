@@ -2,11 +2,8 @@
 <html>
  <head>
   <meta charset="utf-8" />
-  <title>HTML5</title>
-  <!--[if IE]>
-   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <style>
+  <title>Banner</title>
+  <style type="text/css">
 @font-face {
 	font-family: 'Futura';
 	src: url('FuturaMediumC.eot');
@@ -102,43 +99,43 @@
   background-size: cover!important;
 }
 .slide1 {
-  background: url("1.jpg") no-repeat center;   
+  background: url("img/1.jpg") no-repeat center;   
     animation:fade 40s infinite;
 -webkit-animation:fade 40s infinite;
 
 } 
 .slide2 {
-  background: url("2.jpg") no-repeat center;
+  background: url("img/2.jpg") no-repeat center;
     animation:fade2 40s infinite;
 -webkit-animation:fade2 40s infinite;
 }
 .slide3 {
-  background: url("3.jpg") no-repeat center;
+  background: url("img/3.jpg") no-repeat center;
   animation:fade3 40s infinite;
 -webkit-animation:fade3 40s infinite;
 }
 .slide4 {
-  background: url("4.jpg") no-repeat center;
+  background: url("img/4.jpg") no-repeat center;
   animation:fade4 40s infinite;
 -webkit-animation:fade4 40s infinite;
 }
 .slide5 {
-  background: url("5.jpg") no-repeat center;
+  background: url("img/5.jpg") no-repeat center;
   animation:fade5 40s infinite;
 -webkit-animation:fade5 40s infinite;
 }
 .slide6 {
-  background: url("6.jpg") no-repeat center;
+  background: url("img/6.jpg") no-repeat center;
   animation:fade6 40s infinite;
 -webkit-animation:fade6 40s infinite;
 }
 .slide7 {
-  background: url("7.jpg") no-repeat center;
+  background: url("img/7.jpg") no-repeat center;
   animation:fade7 40s infinite;
 -webkit-animation:fade7 40s infinite;
 }
 .slide8 {
-  background: url("8.jpg") no-repeat center;
+  background: url("img/8.jpg") no-repeat center;
   animation:fade8 40s infinite;
 -webkit-animation:fade8 40s infinite;
 }
@@ -152,50 +149,50 @@
 }
 
 .glide1 {
-  background: url("9.jpg")no-repeat center;
+  background: url("img/9.jpg")no-repeat center;
 
     animation:fade 40s infinite;
 -webkit-animation:fade 40s infinite;
 
 } 
 .glide2 {
-  background: url("10.jpg")no-repeat center;
+  background: url("img/10.jpg")no-repeat center;
 
     animation:fade2 40s infinite;
 -webkit-animation:fade2 40s infinite;
 }
 .glide3 {
-    background: url("11.jpg")no-repeat center;
+    background: url("img/11.jpg")no-repeat center;
 
     animation:fade3 40s infinite;
 -webkit-animation:fade3 40s infinite;
 }
 .glide4 {
-    background: url("12.jpg")no-repeat center;
+    background: url("img/12.jpg")no-repeat center;
 
     animation:fade4 40s infinite;
 -webkit-animation:fade4 40s infinite;
 }
 .glide5 {
-    background: url("13.jpg")no-repeat center;
+    background: url("img/13.jpg")no-repeat center;
 
     animation:fade5 40s infinite;
 -webkit-animation:fade5 40s infinite;
 }
 .glide6 {
-    background: url("14.jpg")no-repeat center;
+    background: url("img/14.jpg")no-repeat center;
 
     animation:fade6 40s infinite;
 -webkit-animation:fade6 40s infinite;
 }
 .glide7 {
-    background: url("15.jpg")no-repeat center;
+    background: url("img/15.jpg")no-repeat center;
 
     animation:fade7 40s infinite;
 -webkit-animation:fade7 40s infinite;
 }
 .glide8 {
-    background: url("16.jpg")no-repeat center;
+    background: url("img/16.jpg")no-repeat center;
 
     animation:fade8 40s infinite;
 -webkit-animation:fade8 40s infinite;
@@ -303,8 +300,8 @@
  
   <div class="banner">
   
-	<a href="#"><img src="img/lg.png" class="lg"></img></a>
-	<a href="#"><img src="img/wb.png" class="wb"></img></a>
+	<a href="%request.reference%@%banner.event1%" target="%banner.target%"><img src="img/lg.png" class="lg"></img></a>
+	<a href="%request.reference%@%banner.event2%" target="%banner.target%"><img src="img/wb.png" class="wb"></img></a>
 	
 	<p>Большие размеры </br> Большие скидки</p>
 	
@@ -330,7 +327,7 @@
 	  <div class='glide8'></div>
 	</div>
   
-	<a href="#" class="rbw" alt="Подробнее"></a>
+	<a href="%request.reference%@%banner.event3%" target="%banner.target%" class="rbw" alt="Подробнее"></a>
 	
   </div>
   
