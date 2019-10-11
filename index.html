@@ -53,6 +53,7 @@
 	margin: 20px auto 0;
 	text-decoration:none;
     color:#333;
+	font-size: 18px;
 	width:calc(10vw + 8px);
 	height:calc(3vw + 8px);
 	background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
@@ -93,28 +94,53 @@
   height: 180px;
   position: relative;
 }
-.slide1,.slide2,.slide3,.slide4,.slide5,
-.glide1,.glide2,.glide3,.glide4,.glide5 {
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,
+.glide1,.glide2,.glide3,.glide4,.glide5,.glide6,.glide7,.glide8 {
   position: absolute;
   width: 100%;
   height: 100%;
   background-size: cover!important;
 }
 .slide1 {
-  background: url("2.jpg")no-repeat center;   
-    animation:fade 10s infinite;
--webkit-animation:fade 10s infinite;
+  background: url("1.jpg") no-repeat center;   
+    animation:fade 40s infinite;
+-webkit-animation:fade 40s infinite;
 
 } 
 .slide2 {
-  background: url("3.jpg")no-repeat center;
-    animation:fade2 10s infinite;
--webkit-animation:fade2 10s infinite;
+  background: url("2.jpg") no-repeat center;
+    animation:fade2 40s infinite;
+-webkit-animation:fade2 40s infinite;
 }
 .slide3 {
-  background: url("1.jpg")no-repeat center;
-  animation:fade3 10s infinite;
--webkit-animation:fade3 10s infinite;
+  background: url("3.jpg") no-repeat center;
+  animation:fade3 40s infinite;
+-webkit-animation:fade3 40s infinite;
+}
+.slide4 {
+  background: url("4.jpg") no-repeat center;
+  animation:fade4 40s infinite;
+-webkit-animation:fade4 40s infinite;
+}
+.slide5 {
+  background: url("5.jpg") no-repeat center;
+  animation:fade5 40s infinite;
+-webkit-animation:fade5 40s infinite;
+}
+.slide6 {
+  background: url("6.jpg") no-repeat center;
+  animation:fade6 40s infinite;
+-webkit-animation:fade6 40s infinite;
+}
+.slide7 {
+  background: url("7.jpg") no-repeat center;
+  animation:fade7 40s infinite;
+-webkit-animation:fade7 40s infinite;
+}
+.slide8 {
+  background: url("8.jpg") no-repeat center;
+  animation:fade8 40s infinite;
+-webkit-animation:fade8 40s infinite;
 }
 
 .glider {
@@ -126,43 +152,148 @@
 }
 
 .glide1 {
-  background: url("4.jpg")no-repeat center;
+  background: url("9.jpg")no-repeat center;
 
-    animation:fade 10s infinite;
--webkit-animation:fade 10s infinite;
+    animation:fade 40s infinite;
+-webkit-animation:fade 40s infinite;
 
 } 
 .glide2 {
-  background: url("1.jpg")no-repeat center;
+  background: url("10.jpg")no-repeat center;
 
-    animation:fade2 10s infinite;
--webkit-animation:fade2 10s infinite;
+    animation:fade2 40s infinite;
+-webkit-animation:fade2 40s infinite;
 }
 .glide3 {
-    background: url("2.jpg")no-repeat center;
+    background: url("11.jpg")no-repeat center;
 
-    animation:fade3 10s infinite;
--webkit-animation:fade3 10s infinite;
+    animation:fade3 40s infinite;
+-webkit-animation:fade3 40s infinite;
+}
+.glide4 {
+    background: url("12.jpg")no-repeat center;
+
+    animation:fade4 40s infinite;
+-webkit-animation:fade4 40s infinite;
+}
+.glide5 {
+    background: url("13.jpg")no-repeat center;
+
+    animation:fade5 40s infinite;
+-webkit-animation:fade5 40s infinite;
+}
+.glide6 {
+    background: url("14.jpg")no-repeat center;
+
+    animation:fade6 40s infinite;
+-webkit-animation:fade6 40s infinite;
+}
+.glide7 {
+    background: url("15.jpg")no-repeat center;
+
+    animation:fade7 40s infinite;
+-webkit-animation:fade7 40s infinite;
+}
+.glide8 {
+    background: url("16.jpg")no-repeat center;
+
+    animation:fade8 40s infinite;
+-webkit-animation:fade8 40s infinite;
 }
 @keyframes fade
 {
   0%   {opacity:1}
-  33.333% { opacity: 0}
-  66.666% { opacity: 0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
   100% { opacity: 1}
 }
 @keyframes fade2
 {
   0%   {opacity:0}
-  33.333% { opacity: 1}
-  66.666% { opacity: 0 }
+  12.5% { opacity: 1}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
   100% { opacity: 0}
 }
 @keyframes fade3
 {
   0%   {opacity:0}
-  33.333% { opacity: 0}
-  66.666% { opacity: 1}
+  12.5% { opacity: 0}
+  25% { opacity: 1}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade4
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 1}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade5
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 1}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade6
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 1}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade7
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 1}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade8
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 1}
   100% { opacity: 0}
 }
   </style>
@@ -175,18 +306,28 @@
 	<a href="#"><img src="img/lg.png" class="lg"></img></a>
 	<a href="#"><img src="img/wb.png" class="wb"></img></a>
 	
-	<p>Большая одежда </br> Большие скидки</p>
+	<p>Большие размеры </br> Большие скидки</p>
 	
 	<div class='slider'>
 	  <div class='slide1'></div>
 	  <div class='slide2'></div>
 	  <div class='slide3'></div>
+	  <div class='slide4'></div>
+	  <div class='slide5'></div>
+	  <div class='slide6'></div>
+	  <div class='slide7'></div>
+	  <div class='slide8'></div>
 	</div>
 	
 	<div class='glider'>
 	  <div class='glide1'></div>
 	  <div class='glide2'></div>
 	  <div class='glide3'></div>
+	  <div class='glide4'></div>
+	  <div class='glide5'></div>
+	  <div class='glide6'></div>
+	  <div class='glide7'></div>
+	  <div class='glide8'></div>
 	</div>
   
 	<a href="#" class="rbw" alt="Подробнее"></a>
